@@ -1,0 +1,9 @@
+# Primer ejemplo de playbook en ansible
+
+- hosts: all
+  tasks:
+  - name: Crear carpeta
+    shell: mkdir Alumnos
+    shell: cd Alumnos
+    shell: touch names.txt
+    shell: echo "Valeria Sofia Nevarez Juarez" > names.txt
